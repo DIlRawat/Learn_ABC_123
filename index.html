@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="#">
+    <title>Learn</title>
+</head>
+<body onload="init()">
+
+    <div id="sketchpadapp" class="main">
+    <div class="navbars">
+        <div class="heading">
+            <h2>Select an Option</h2>
+        </div>
+        <div class="nav">
+                <button id="learnABC">Learn ABC</button>
+                <button id="learn123">Learn 123</button>
+        </div>
+        <div class="display">
+            <h3 id="learnthis">Write this:</h3>
+            <button id="sound">Sound</button>
+        </div>
+        <div class="rightside">
+            <canvas id="sketchpad" height="300" width="400">
+            </canvas>
+        </div>
+        <div class="options">
+            <button id="previous" onclick="clearCanvas(canvas,ctx);">Previous</button>
+            <input type="submit" value="Clear" class="clearbutton" onclick="clearCanvas(canvas,ctx);">
+            <button id="next" onclick="clearCanvas(canvas,ctx);">Next</button>
+
+        </div>
+    </div>
+</body>
+<script src="app.js"></script>
+</html>
+
+

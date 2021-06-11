@@ -1,0 +1,56 @@
+/* Some CSS styling */
+#sketchpadapp {
+  /* Prevent nearby text being highlighted when accidentally dragging mouse outside confines of the canvas */
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.leftside {
+  float: left;
+  width: 220px;
+  height: 285px;
+  background-color: #def;
+  padding: 10px;
+  border-radius: 4px;
+}
+.rightside {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#sketchpad {
+  float: left;
+  height: 300px;
+  width: 400px;
+  border: 2px solid #888;
+  border-radius: 4px;
+  position: relative; /* Necessary for correct mouse co-ords in Firefox */
+}
+.clearbutton,
+button {
+  font-size: 16px;
+  padding: 10px;
+  -webkit-appearance: none;
+  background: #eee;
+  border: 1px solid #888;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.nav,
+.options,
+.display {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 8px;
+}
+
+.heading {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
