@@ -1,3 +1,7 @@
+body{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
 /* Some CSS styling */
 #sketchpadapp {
   /* Prevent nearby text being highlighted when accidentally dragging mouse outside confines of the canvas */
@@ -8,6 +12,7 @@
   -ms-user-select: none;
   user-select: none;
 }
+
 .leftside {
   float: left;
   width: 220px;
@@ -16,28 +21,41 @@
   padding: 10px;
   border-radius: 4px;
 }
+
 .rightside {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
+
 #sketchpad {
   float: left;
   height: 300px;
   width: 400px;
   border: 2px solid #888;
   border-radius: 4px;
-  position: relative; /* Necessary for correct mouse co-ords in Firefox */
+  position: relative;
+  /* Necessary for correct mouse co-ords in Firefox */
 }
+
 .clearbutton,
 button {
-  font-size: 16px;
+  font-size: 1.2rem;
   padding: 10px;
   -webkit-appearance: none;
   background: #eee;
   border: 1px solid #888;
   cursor: pointer;
   border-radius: 4px;
+}
+
+.clearbutton:hover,
+button:hover {
+  background-color: #e0ffce;
+}
+
+button:hover{
+
 }
 
 .nav,
@@ -49,8 +67,56 @@ button {
   padding: 8px;
 }
 
+/* main heading of the page */
 .heading {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  font-size: 1.5rem;
+}
+
+/* dialog boxes on the page */
+.dialog-box {
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+  border-radius: 5px;
+  background: cornsilk;
+  font-size: 1.5rem;
+  z-index: 99;
+}
+h1#learnthis{
+  font-size: 2.5rem;
+    padding: 0.5rem 1.5rem;
+    border-radius: 5px;
+    background: #b6ffb6;
+}
+
+#sound {
+  display: flex;              
+  align-items: center;        
+  padding: 10px;               
+  cursor: pointer;            
+}
+
+/* Styling for the image inside the button */
+#sound img {
+  margin-right: 8px;         
+  height: 26px;              
+  width: 25px;              
+}
+
+form.dialog-btn {
+  text-align: center;
+}
+
+/* note about the project */
+.ps_note {
+  text-align: center;
+  margin-top: 3rem;
+  font-weight: 800;
+  font-size: 1.2rem;
+}
+
+/* modal on the page to show info about the project */
+.inpage-modal{
+  text-align: center;
 }
