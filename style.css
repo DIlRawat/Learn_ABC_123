@@ -29,7 +29,6 @@ body{
 }
 
 #sketchpad {
-  float: left;
   height: 300px;
   width: 400px;
   border: 2px solid #888;
@@ -119,4 +118,13 @@ form.dialog-btn {
 /* modal on the page to show info about the project */
 .inpage-modal{
   text-align: center;
+}
+
+/* adding a breakpoint for smartphones */
+@media only screen and (max-width: 768px) {
+  h1#learnthis {
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+}
+
 }
